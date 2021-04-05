@@ -5,6 +5,7 @@ ENV VERSION=1.6
 RUN apt-get update && apt-get install --no-install-recommends -y \
     tini \
     aprx \
+    curl \
     && rm -rf /var/lib/apt/lists/* \
     && addgroup --gid 10001 aprx \
     && adduser --system --uid 10001 --gid 10001 aprx \
